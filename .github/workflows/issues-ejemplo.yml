@@ -6,7 +6,7 @@ on:
 
 jobs:
   procesa-issue:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Muestra el titulo del issue
         run: echo "El titulo del issue es ${{ github.event.issue.title }}"
