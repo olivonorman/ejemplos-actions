@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - main
+    paths: 
+      - 'codigo/**'
+      - '.github/workflows/hola-mundo.yml'
   pull_request:
     branches:
       - main
