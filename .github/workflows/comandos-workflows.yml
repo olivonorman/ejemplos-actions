@@ -1,0 +1,14 @@
+name: Comandos workflows
+
+on:  
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensajes de error y warning
+        run: |
+          echo "Esto es un mensaje normal"
+          echo "::warning::esto es un mensaje de warning"
+          echo "::error::esto es un mensaje de error"
