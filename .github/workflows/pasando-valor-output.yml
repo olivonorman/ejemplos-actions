@@ -1,0 +1,16 @@
+name: Pasando valor en Output
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pasando valores en output
+        id: genera-valor
+        run: echo "MI_VALOR=Norman" >> "$GITHUB_OUTPUT"
+
+      - name: Obtiene la variable
+        run: echo "${{ steps.genera-valor.outputs.MI_VALOR }}"
+      
